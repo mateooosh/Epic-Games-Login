@@ -25,6 +25,7 @@ img{
 	margin:0 auto;
 }
 
+
 #socials{
 	width:100%;
 	display:flex;
@@ -44,6 +45,10 @@ img{
 	background-color: #4267B2;
 }
 
+.social:nth-child(1):hover{
+	background-color: #3156a1;
+}
+
 .social:nth-child(2){
 	background-color: #FFFFFF;
 }
@@ -60,6 +65,18 @@ img{
 	background-color: #E60012;
 }
 
+
+
+
+.social img{
+	position:relative;
+	top:50%;
+	left:50%;
+	margin: -9px 0 0 -9px;
+	width:18px;
+	height:18px;
+}
+
 h1{
 	font-size:13px;
 	font-weight: 700;
@@ -67,6 +84,10 @@ h1{
 	color:#ccc;
 	margin-top:30px;
 	margin-bottom:15px;
+}
+
+.login-label input:focus{
+	background-color: rgb(72,72,72);
 }
 
 label{
@@ -84,6 +105,13 @@ input{
 	color:rgb(117,117,117);
 	border:none;
 	outline:none;
+}
+
+label div{
+	position: absolute;
+	font-size:14px;
+	font-weight: 700;
+	float:right;
 }
 
 
@@ -153,16 +181,24 @@ input{
   border-radius: 0;
 }
 
+#checkbox{
+	float:left;
+}
+
 #remember{
+	float:left;
 	margin-left:14px;
 	color:rgb(117,117,117);
 	font-weight: 700;
 	font-size: 14px;
 }
 
-#remind{
+#remind a {
 	color:rgb(117,117,117);
-	width:190px;
+}
+
+#remind{
+	float:right;
 	text-align: right;
 	font-weight: 700;
 	font-size: 14px;
@@ -173,7 +209,7 @@ button{
 	height: 50px;
 	margin-top:30px;
 	font-weight: 700;
-	font-size:13px;
+	font-size:12px;
 	background-color: rgb(25,25,25);
 	color:rgb(86,86,86);
 	border:none;
@@ -201,6 +237,7 @@ p{
 	text-align: center;
 	font-weight: 700;
 	font-size: 14px;
+	line-height: 1.5;
 	color:rgb(117,117,117);
 	margin:0;
 	max-width:360px;
@@ -209,6 +246,7 @@ p{
 a{
 	color:rgb(210,210,210);
 	text-decoration: none;
+	font-weight: 700;
 }
 
 a:link, a:visited, a:active{
@@ -227,7 +265,11 @@ a:link, a:visited, a:active{
 		padding: 30px 40px 10px;
 	}
 
-	#remind{
-		width:50%;
+	#remind, #remember{
+		width:43%;
 	}
+
+	#remember{
+	margin-left:5px;
+ 	}
 }
