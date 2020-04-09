@@ -289,7 +289,7 @@ a:link, a:visited, a:active{
 }
 
 
-@media(max-width:470px){
+@media(max-width:530px){
 	body{
 		background-color: #202020;
 	}
