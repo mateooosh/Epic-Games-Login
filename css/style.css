@@ -40,6 +40,11 @@ img{
 	display:flex;
 }
 
+.social:hover{
+	cursor:pointer;
+	box-shadow: 1px 1px 10px 0;
+}
+
 .social:nth-child(1){
 	margin-left:0;
 	background-color: #4267B2;
@@ -49,22 +54,43 @@ img{
 	background-color: #3156a1;
 }
 
+
 .social:nth-child(2){
 	background-color: #FFFFFF;
 }
+
+.social:nth-child(2):hover{
+	background-color: #ddd;
+}
+
+
 
 .social:nth-child(3){
 	background-color: #02B3E8;
 }
 
+.social:nth-child(3):hover{
+	background-color: #00a0b5;
+}
+
+
 .social:nth-child(4){
 	background-color: #107C10;
 }
+
+.social:nth-child(4):hover{
+	background-color: #006b00;
+}
+
+
 
 .social:nth-child(5){
 	background-color: #E60012;
 }
 
+.social:nth-child(5):hover{
+	background-color: #d50001;
+}
 
 
 
@@ -90,6 +116,19 @@ h1{
 	background-color: rgb(72,72,72);
 }
 
+.login-label div{
+	position:relative;
+}
+
+.label-required{
+	position: absolute;
+	top:16px;
+	right:10px;
+	font-weight: 700;
+	font-size:15px;
+	color:#ccc;
+}
+
 label{
 	margin-bottom: 0;
 }
@@ -107,12 +146,7 @@ input{
 	outline:none;
 }
 
-label div{
-	position: absolute;
-	font-size:14px;
-	font-weight: 700;
-	float:right;
-}
+
 
 
 /*CHECKBOX*/
@@ -256,8 +290,12 @@ a:link, a:visited, a:active{
 
 
 @media(max-width:470px){
+	body{
+		background-color: #202020;
+	}
+
 	#main{
-		width:100%;
+		width:100vw;
 		min-height:100%;
 		top:0;
 		left:0;
@@ -270,6 +308,6 @@ a:link, a:visited, a:active{
 	}
 
 	#remember{
-	margin-left:5px;
+		margin-left:5px;
  	}
 }
