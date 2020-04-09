@@ -7,6 +7,7 @@ body{
 	min-height:100%;
 	width:100%;
 	font-family: 'Roboto', sans-serif;
+	margin:0;
 }
 
 #main{
@@ -63,8 +64,6 @@ img{
 	background-color: #ddd;
 }
 
-
-
 .social:nth-child(3){
 	background-color: #02B3E8;
 }
@@ -72,7 +71,6 @@ img{
 .social:nth-child(3):hover{
 	background-color: #00a0b5;
 }
-
 
 .social:nth-child(4){
 	background-color: #107C10;
@@ -82,8 +80,6 @@ img{
 	background-color: #006b00;
 }
 
-
-
 .social:nth-child(5){
 	background-color: #E60012;
 }
@@ -91,7 +87,6 @@ img{
 .social:nth-child(5):hover{
 	background-color: #d50001;
 }
-
 
 
 .social img{
@@ -112,15 +107,21 @@ h1{
 	margin-bottom:15px;
 }
 
-.login-label input:focus{
+.label-login input:focus{
 	background-color: rgb(72,72,72);
 }
 
-.login-label div{
+.label-login div{
 	position:relative;
 }
 
+
+
+
+
+
 .label-required{
+	display:none;
 	position: absolute;
 	top:16px;
 	right:10px;
@@ -128,6 +129,7 @@ h1{
 	font-size:15px;
 	color:#ccc;
 }
+
 
 label{
 	margin-bottom: 0;
@@ -141,10 +143,13 @@ input{
 	padding:0 14px;
 	margin-bottom:14px;
 	background-color:rgb(43,43,43); 
-	color:rgb(117,117,117);
+	color:rgb(230,230,230);
 	border:none;
 	outline:none;
 }
+
+
+
 
 
 
@@ -258,6 +263,15 @@ button:focus{
 	outline:none;
 }
 
+.btn-active{
+	background-color:rgb(3,123,238);
+	color:white;
+}
+
+.btn-active:hover{
+	cursor:pointer;
+}
+
 h2{
 	text-align: center;
 	font-weight: 400;
@@ -289,6 +303,9 @@ a:link, a:visited, a:active{
 }
 
 
+
+
+
 @media(max-width:530px){
 	body{
 		background-color: #202020;
@@ -300,11 +317,7 @@ a:link, a:visited, a:active{
 		top:0;
 		left:0;
 		margin:0 0 0 0;
-		padding: 10px 40px 0;
-	}
-
-	#remind, #remember{
-		width:43%;
+		padding: 10px 30px 0;
 	}
 
 	#remember{
